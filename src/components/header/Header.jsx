@@ -1,42 +1,41 @@
 import { useNavigate } from "react-router-dom"
 import "./Header.css"
-import React from "react"
+import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStoreOutlined';import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export const navElements = [
-    {label: "Tesla", route:"", style: {marginRight: "auto"}}, 
-    {label: "Model 3", route:"model_3"},
-    {label: "Model X", route:"model_x"}, 
-    {label: "CyberTruck", route:"cybertruck"},
-    {label: "Menu", route:"#" ,style: {marginLeft:'auto'}},
-]
-
-
-export default function Header({setShowSidebar}) {
-    const navigate = useNavigate()
-  return (
-    <>
- 
-     <nav>
-        <ul className="headerList">
-            {
-                navElements.map(({label,route,style = {}}) =>(
-                    <li 
-                        style={style}
-                        key={label} 
-                        onClick={()=>{
-                        if (label === "Menu"){
-                            setShowSidebar(true)
-                        }else{
-                            navigate(`/${route}`);
-                        }
-                    }}
-                    >
-                        {label}
-                    </li>
-                ))}
-        </ul>
-    </nav>
-    </>
-   
-  );
-}
+    { id: "tesla", label: "Tesla", route: "", style: { marginRight: "auto" } }, 
+    { id: "model3", label: "Model 3", route: "model_3" },
+    { id: "modelx", label: "Model X", route: "model_x" }, 
+    { id: "cybertruck", label: "CyberTruck", route: "cybertruck" },
+    { id: "shop", icon: <LocalGroceryStoreOutlinedIcon />, route: "Shop" }, // Use the ShoppingCartIcon component directly as an icon property
+    { id: "menu", label: "Menu", route: "#", style: { marginLeft: 'auto' } },
+  ];
+  
+  export default function Header({ setShowSidebar }) {
+    const navigate = useNavigate();
+  
+    return (
+      <>
+        <nav>
+          <ul className="headerList">
+            {navElements.map(({ id, label, icon, route, style = {} }) => (
+              <li
+                key={id} // Add a unique key prop for each li element
+                style={style}
+                onClick={() => {
+                  if (label === "Menu") {
+                    setShowSidebar(true);
+                  } else {
+                    navigate(`/${route}`);
+                  }
+                }}
+              >
+                {/* Render the label if it's a string, otherwise render the icon */}
+                {typeof label === "string" ? label : icon}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </>
+    );
+  }

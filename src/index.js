@@ -7,6 +7,7 @@ import Model3Page from './pages/Model3Page';
 import ModelXPage from "./pages/ModelXPage" ;
 import CyberTruckPage from './pages/CyberTruckPage';
 import App from './App';
+import ShopPage  from'./pages/ShopPage';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,13 @@ const router = createBrowserRouter([
     element: 
     <App>
       <CyberTruckPage />
+    </App>
+  },
+  {
+    path: "/shop",
+    element: 
+    <App>
+      <ShopPage />
     </App>
   },
 ]);

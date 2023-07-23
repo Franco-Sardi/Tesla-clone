@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: black;
+    height: 80%;
+    width: 80%;
+    justify-items: center;
+  }
+  section{
+  background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .image-grid-img {
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    height: 60%;
+  }
+  
+  .grid-item {
+    text-align: left;
+  }
+  
+  .grid-item-text {
+    padding: 50px;
+    font-size: 14px;
+  }
+  
+  .text {
+    margin-top: 10px;
+  }
+  .title{
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
