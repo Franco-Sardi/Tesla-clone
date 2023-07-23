@@ -9,6 +9,7 @@ body {
   color: white;
   overflow-y: hidden;
   scroll-behavior:smooth;
+  caret-color: transparent;
 }
 
 .container {
