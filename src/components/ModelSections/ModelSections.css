@@ -23,8 +23,41 @@
     display: flex;
     justify-content: space-evenly;
     width: 65%;
+    flex-direction: column;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+Button{
+  margin: 2rem;
+ 
 }
 
 .top-section{
     margin-top: 3rem;
+}
+
+.feature-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+}
+
+.feature-items li {
+  padding: 0px 10px;
+  margin: 0px 15px;
+}
+
+.feature-items h6 {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.feature-items p {
+  font-size: 14px;
 }

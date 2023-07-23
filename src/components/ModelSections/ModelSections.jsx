@@ -26,10 +26,11 @@ export default function ModelSections({
                             ))}
                         </ul>
                     )}
-                </div>
-                <div>
+               
+                <div className="button">
                     <Button text={"Order Now"} />
                     <Button text={"Demo Drive"} />
+                </div>
                 </div>
             </div>
         </div>

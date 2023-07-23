@@ -2,10 +2,10 @@ import React from 'react'
 import ModelSections from '../components/ModelSections/ModelSections'
 import CybertruckImage from"../components/Assets/cybertruck.jpg"
 const featureItems = [
-  {title: '2.3s 0-60', description: 'Very Fast'},
-  {title: '2.3s 0-60', description: 'Very Fast'},
-  {title: '2.3s 0-60', description: 'Very Fast'},
-  {title: '2.3s 0-60', description: 'Very Fast'},
+  {title: '805 Horsepower', description: '1033 lb-ft (torque)'},
+  {title: '6.5s 0-100', description: '177 km/h (maximum)'},
+  {title: '700km', description: 'Autonomy'},
+  {title: '$49.900', description: 'Price'},
 
 ]
 export default function CyberTruckPage() {
