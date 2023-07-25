@@ -29,7 +29,7 @@ export default function CyberTruckPage() {
         <section className='section'>
           <ModelSectionsNoText backgroundImage={CybertruckImage2} />
         </section>
-        <section className='section'>
+        <section className='section2'>
           <ImageGrid
           image1={cybertruckImage3}
           image2={cybertruckImage4}

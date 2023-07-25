@@ -1,3 +1,7 @@
 export default function ShopPage(){
-    return <h1>Shop Page</h1>
-}
+    return (
+        <div className="container shop-page">
+            <h1>Products</h1>
+        </div>
+  )
+ }

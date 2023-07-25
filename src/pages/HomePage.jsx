@@ -8,24 +8,24 @@ import ModelXImage from "../components/Assets/Model-X.jpg"
 export default function HomePage() {
 return( 
     <div className='container'>
-        <section className='section' id="section1">
+        <section className='section' >
             <HomeSectionVideo/>
         </section>
-        <section className='section' id="section2">
+        <section className='section' >
         <ModelSections
             header={"Model 3"}
             description={"Starting at $32,740"}
             backgroundImage={Model3Image}
         />
         </section>
-        <section className='section' id="section3">
+        <section className='section' >
         <ModelSections
             header={"Model X"}
             description={"Explore Inventory"}
             backgroundImage={ModelXImage}
         />
         </section>
-        <section className='section' id="section4">
+        <section className='section' >
         <ModelSections
             header={"Cybertruck"}
             description={"Explore Inventory"}

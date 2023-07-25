@@ -24,6 +24,21 @@ body {
   height: 100vh;
   scroll-snap-align: start;
 }
+.section2 {
+  height: 100vh;
+  scroll-snap-align: start;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.shop-page{
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

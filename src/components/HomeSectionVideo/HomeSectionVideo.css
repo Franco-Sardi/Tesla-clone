@@ -1,23 +1,23 @@
-.video-background {
-position: absolute;
-right: 0;
-bottom: 0;
-width: 100vw;
-height: 100vh;
-z-index:-1;
-object-fit: cover;
-}
-.overlay{
-padding-top: 1rem;
-display: inline-block;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 100vw;
-height: 100vh;
-align-items: center;
-z-index: 2;
-}
+ .video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+  
 
 .overlay .text{
     display: flex;
@@ -29,4 +29,8 @@ z-index: 2;
 }
 .overlay .text h1{
     margin-bottom: 10px;   
+
+}
+h2, h1{
+ margin-top: 4rem;
 }

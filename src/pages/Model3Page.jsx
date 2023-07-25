@@ -29,7 +29,7 @@ export default function Model3Page() {
         <section className='section'>
           <ModelSectionsNoText backgroundImage={TeslaModel3Image} />
         </section>
-        <section className='section'>
+        <section className='section2'>
           <Carousel />
         </section>
     </div>

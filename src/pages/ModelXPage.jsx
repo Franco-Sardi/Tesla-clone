@@ -28,7 +28,7 @@ export default function ModelXPage() {
         <section className='section'>
           <ModelSectionsNoText backgroundImage={ModelX2} />
         </section>
-        <section className='section'>
+        <section className='section2'>
           <ImageGrid 
           image1={ModelX1}
           image2={ModelX3}
