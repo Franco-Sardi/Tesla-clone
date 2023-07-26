@@ -9,6 +9,7 @@ import ModelXPage from "./pages/ModelXPage" ;
 import CyberTruckPage from './pages/CyberTruckPage';
 import App from './App';
 import ShopPage from './pages/ShopPage';
+import { RecoilRoot } from 'recoil';
 
 const router = createBrowserRouter([
   {
@@ -51,7 +52,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RecoilRoot>
+      <RouterProvider router={router} />
+    </RecoilRoot>
   </React.StrictMode>
 );
 
